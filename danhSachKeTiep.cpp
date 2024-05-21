@@ -104,9 +104,9 @@ int chen(List &L, int k, SinhVien sv){
 
 //sap xep tang dan (selection sort)
 void sepXepTang(List &L){
-	for(int i = 0; i < L.count - 1; i++){
+	for(int i = 0; i < L.count; i++){
 		int m = i; // min
-		for(int j = i + 1; j < L.count; j++){
+		for(int j = i + 1; j <= L.count; j++){
 			if(strcmp(L.e[j].ten, L.e[m].ten) < 0){ // j < m
 				 m = j;
 			}

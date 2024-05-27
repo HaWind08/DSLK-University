@@ -114,7 +114,7 @@ void chenK(List &L, int k){
 	SinhVien sv;
 	cout << "Thong tin can chen: " << endl;
 	nhapSV(sv);
-	if(!ktDay(L) && k <= L.count+2 && k >= 1){
+	if(!ktDay(L) && k <= L.count+1 && k >= 1){
 		for(int i = L.count; i >= k-1; i--){
 			L.e[i+1] = L.e[i];
 		}
